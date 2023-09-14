@@ -49,9 +49,8 @@
 
 
 
-arr = [1,2]
-try:
-    print(arr[2])
-except IndexError:
-     arr.append(0)
-     print(arr[2])
+file = list(open('topics.csv','r', encoding='utf-8'))
+file.pop(0)    
+file.pop(1)    
+file.pop(2)
+print(file[0])    
