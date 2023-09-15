@@ -49,8 +49,15 @@
 
 
 
-file = list(open('topics.csv','r', encoding='utf-8'))
-file.pop(0)    
-file.pop(1)    
-file.pop(2)
-print(file[0])    
+# file = list(open('topics.csv','r', encoding='utf-8'))
+# file.pop(0)    
+# file.pop(1)    
+# file.pop(2)
+# print(file[0])    
+
+
+d = {
+    '(a,b)':'b'
+}
+
+d['(a,b)']
