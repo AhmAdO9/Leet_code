@@ -1,5 +1,5 @@
 class Solution():
-    def removeDuplicates(self, nums):
+    def removeDuplicates_LevelTwo(self, nums):
         out = []
         nums.sort()
         j=1
@@ -22,4 +22,4 @@ class Solution():
 
 nums = [1,1,1,1,1,1,2,2,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8]
 sol = Solution() 
-print(sol.removeDuplicates(nums))
+print(sol.removeDuplicates_LevelTwo(nums))
