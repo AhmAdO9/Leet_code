@@ -64,5 +64,12 @@
 
 
 
+import random
 
+s = {}
 
+s[1] = 1
+s[1] = 1
+s[1] = 1
+s.pop(2)
+print(s)
