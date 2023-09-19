@@ -63,13 +63,30 @@
 # d['(a,b)']
 
 
+def canCompleteCircuit(gas, cost):
+    n = len(gas)
+    
+    total_gas = 0  # Total gas in the tank
+    current_gas = 0  # Gas at the current station
+    start_index = 0  # Index of the starting station
+    
+    for i in range(n):
+        total_gas += gas[i] - cost[i]
+        current_gas += gas[i] - cost[i]
+        
+        # If the current gas becomes negative, reset the starting station
+        if current_gas < 0:
+            current_gas = 0
+            start_index = i + 1
+    
+    # If the total gas is negative, it means there is no solution
+    if total_gas < 0:
+        return -1
+    
+    return start_index
 
-import random
-
-s = {}
-
-s[1] = 1
-s[1] = 1
-s[1] = 1
-s.pop(2)
-print(s)
+# Example usage:
+gas = [2,3,4]
+cost = [3,4,3]
+result = canCompleteCircuit(gas, cost)
+print(result) 
