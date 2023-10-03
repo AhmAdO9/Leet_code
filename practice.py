@@ -62,5 +62,13 @@
 
 # d['(a,b)']
 
-arr = []
-print(arr[0])
+# arr = []
+# print(arr[0])
+
+# arr = [1,2,3,4,5]
+# arr1= [2,3,3,4]
+# arr2= [2,3,3]
+# print(min(len(arr),len(arr1), len(arr2)))
+
+li = [[1]]
+print(li[0])
